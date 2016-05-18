@@ -56,7 +56,6 @@ class IndexController extends Controller{
     {
         return $this->render('admin-list.html');
     }
-
 }
 
 ?>
