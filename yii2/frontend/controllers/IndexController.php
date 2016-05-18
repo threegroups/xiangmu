@@ -8,14 +8,6 @@ use yii\web\UploadedFile;
 class IndexController extends Controller{
     public $enableCsrfValidation = false;
     public $layout =false ;
-    public function actionLogin()
-    {
-        return $this->render('login.html');
-    }
-    public function actionIndex()
-    {
-        return $this->render('index.html');
-    }
     public function actionWelcome()
     {
         return $this->render('welcome.html');
