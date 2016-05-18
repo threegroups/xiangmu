@@ -2793,3 +2793,698 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1463396123.6855
     'REQUEST_TIME' => 1463396123
 ]
+2016-05-17 15:13:32 [127.0.0.1][-][-][error][yii\base\InvalidParamException] exception 'yii\base\InvalidParamException' with message 'The view file does not exist: F:\mjy\xiangmu\yii2\frontend\views\comment\feedback-list.html' in F:\mjy\xiangmu\yii2\vendor\yiisoft\yii2\base\View.php:226
+Stack trace:
+#0 F:\mjy\xiangmu\yii2\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile('F:\\mjy\\xiangmu\\...', Array, Object(frontend\controllers\CommentController))
+#1 F:\mjy\xiangmu\yii2\vendor\yiisoft\yii2\base\Controller.php(371): yii\base\View->render('feedback-list.h...', Array, Object(frontend\controllers\CommentController))
+#2 F:\mjy\xiangmu\yii2\frontend\controllers\CommentController.php(9): yii\base\Controller->render('feedback-list.h...')
+#3 [internal function]: frontend\controllers\CommentController->actionFeedback_list()
+#4 F:\mjy\xiangmu\yii2\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#5 F:\mjy\xiangmu\yii2\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#6 F:\mjy\xiangmu\yii2\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('feedback_list', Array)
+#7 F:\mjy\xiangmu\yii2\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('comment/feedbac...', Array)
+#8 F:\mjy\xiangmu\yii2\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 F:\mjy\xiangmu\yii2\frontend\web\index.php(18): yii\base\Application->run()
+#10 {main}
+2016-05-17 15:13:32 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'comment/feedback_list'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'av107tdus0e2qmt9v3ucqafea4'
+    '_csrf' => 'e38fdfa517e9fa91ce1f840b063da06be45d0dc9f22f65941a78e991d7153179a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"qz1vutxOkcPqawKKsAj-0_E9RA2PyR-Q\";}'
+    'Hm_lvt_080836300300be57b7f34f4b3e97d911' => '1463442089'
+    'Hm_lpvt_080836300300be57b7f34f4b3e97d911' => '1463469210'
+    'Huiskin' => 'orange'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Program Files (x86)\\AMD APP\\bin\\x86_64;C:\\Program Files (x86)\\AMD APP\\bin\\x86;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;F:\\Wamp\\mysql\\bin;F:\\SVN\\bin;D:\\TortoiseGit\\bin;F:\\phpStudy\\php55n;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\Administrator\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SYSTEMROOT' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'F:/phpStudy/php55n'
+    '_FCGI_SHUTDOWN_EVENT_' => '384'
+    'SCRIPT_NAME' => '/xiangmu/yii2/frontend/web/index.php'
+    'REQUEST_URI' => '/xiangmu/yii2/frontend/web/index.php?r=comment/feedback_list'
+    'QUERY_STRING' => 'r=comment/feedback_list'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '58883'
+    'SCRIPT_FILENAME' => 'F:/mjy/xiangmu/yii2/frontend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'F:/mjy'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'F:/mjy'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.mjy.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/0.9.8zb mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\Windows'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => 'PHPSESSID=av107tdus0e2qmt9v3ucqafea4; _csrf=e38fdfa517e9fa91ce1f840b063da06be45d0dc9f22f65941a78e991d7153179a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22qz1vutxOkcPqawKKsAj-0_E9RA2PyR-Q%22%3B%7D; Hm_lvt_080836300300be57b7f34f4b3e97d911=1463442089; Hm_lpvt_080836300300be57b7f34f4b3e97d911=1463469210; Huiskin=orange'
+    'HTTP_REFERER' => 'http://www.mjy.com/xiangmu/yii2/frontend/web/index.php?r=index/index'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:46.0) Gecko/20100101 Firefox/46.0'
+    'HTTP_HOST' => 'www.mjy.com'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/xiangmu/yii2/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1463469212.204
+    'REQUEST_TIME' => 1463469212
+]
+2016-05-17 15:13:32 [127.0.0.1][-][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: Exception 'Exception' with message 'Serialization of 'Closure' is not allowed' 
+
+in F:\mjy\xiangmu\yii2\vendor\yiisoft\yii2-debug\LogTarget.php:58
+
+Stack trace:
+#0 F:\mjy\xiangmu\yii2\vendor\yiisoft\yii2-debug\LogTarget.php(58): serialize(Array)
+#1 F:\mjy\xiangmu\yii2\vendor\yiisoft\yii2-debug\LogTarget.php(112): yii\debug\LogTarget->export(Array)
+#2 F:\mjy\xiangmu\yii2\vendor\yiisoft\yii2\log\Dispatcher.php(183): yii\debug\LogTarget->collect(Array, true)
+#3 F:\mjy\xiangmu\yii2\vendor\yiisoft\yii2\log\Logger.php(173): yii\log\Dispatcher->dispatch(Array, true)
+#4 F:\mjy\xiangmu\yii2\vendor\yiisoft\yii2\base\ErrorHandler.php(111): yii\log\Logger->flush(true)
+#5 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\base\InvalidParamException))
+#6 {main}
+2016-05-17 15:13:32 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'comment/feedback_list'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'av107tdus0e2qmt9v3ucqafea4'
+    '_csrf' => 'e38fdfa517e9fa91ce1f840b063da06be45d0dc9f22f65941a78e991d7153179a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"qz1vutxOkcPqawKKsAj-0_E9RA2PyR-Q\";}'
+    'Hm_lvt_080836300300be57b7f34f4b3e97d911' => '1463442089'
+    'Hm_lpvt_080836300300be57b7f34f4b3e97d911' => '1463469210'
+    'Huiskin' => 'orange'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Program Files (x86)\\AMD APP\\bin\\x86_64;C:\\Program Files (x86)\\AMD APP\\bin\\x86;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;F:\\Wamp\\mysql\\bin;F:\\SVN\\bin;D:\\TortoiseGit\\bin;F:\\phpStudy\\php55n;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\Administrator\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SYSTEMROOT' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'F:/phpStudy/php55n'
+    '_FCGI_SHUTDOWN_EVENT_' => '384'
+    'SCRIPT_NAME' => '/xiangmu/yii2/frontend/web/index.php'
+    'REQUEST_URI' => '/xiangmu/yii2/frontend/web/index.php?r=comment/feedback_list'
+    'QUERY_STRING' => 'r=comment/feedback_list'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '58883'
+    'SCRIPT_FILENAME' => 'F:/mjy/xiangmu/yii2/frontend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'F:/mjy'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'F:/mjy'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.mjy.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/0.9.8zb mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\Windows'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => 'PHPSESSID=av107tdus0e2qmt9v3ucqafea4; _csrf=e38fdfa517e9fa91ce1f840b063da06be45d0dc9f22f65941a78e991d7153179a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22qz1vutxOkcPqawKKsAj-0_E9RA2PyR-Q%22%3B%7D; Hm_lvt_080836300300be57b7f34f4b3e97d911=1463442089; Hm_lpvt_080836300300be57b7f34f4b3e97d911=1463469210; Huiskin=orange'
+    'HTTP_REFERER' => 'http://www.mjy.com/xiangmu/yii2/frontend/web/index.php?r=index/index'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:46.0) Gecko/20100101 Firefox/46.0'
+    'HTTP_HOST' => 'www.mjy.com'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/xiangmu/yii2/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1463469212.204
+    'REQUEST_TIME' => 1463469212
+]
+2016-05-17 15:44:04 [127.0.0.1][-][av107tdus0e2qmt9v3ucqafea4][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request: comment/feedback_list' in F:\mjy\xiangmu\yii2\vendor\yiisoft\yii2\base\Controller.php:122
+Stack trace:
+#0 F:\mjy\xiangmu\yii2\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('feedback_list', Array)
+#1 F:\mjy\xiangmu\yii2\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('comment/feedbac...', Array)
+#2 F:\mjy\xiangmu\yii2\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 F:\mjy\xiangmu\yii2\frontend\web\index.php(18): yii\base\Application->run()
+#4 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in F:\mjy\xiangmu\yii2\vendor\yiisoft\yii2\web\Application.php:96
+Stack trace:
+#0 F:\mjy\xiangmu\yii2\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 F:\mjy\xiangmu\yii2\frontend\web\index.php(18): yii\base\Application->run()
+#2 {main}
+2016-05-17 15:44:04 [127.0.0.1][-][av107tdus0e2qmt9v3ucqafea4][info][application] $_GET = [
+    'r' => 'comment/feedback_list'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'av107tdus0e2qmt9v3ucqafea4'
+    '_csrf' => 'e38fdfa517e9fa91ce1f840b063da06be45d0dc9f22f65941a78e991d7153179a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"qz1vutxOkcPqawKKsAj-0_E9RA2PyR-Q\";}'
+    'Hm_lvt_080836300300be57b7f34f4b3e97d911' => '1463442089'
+    'Hm_lpvt_080836300300be57b7f34f4b3e97d911' => '1463469845'
+    'Huiskin' => 'orange'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Program Files (x86)\\AMD APP\\bin\\x86_64;C:\\Program Files (x86)\\AMD APP\\bin\\x86;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;F:\\Wamp\\mysql\\bin;F:\\SVN\\bin;D:\\TortoiseGit\\bin;F:\\phpStudy\\php55n;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\Administrator\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SYSTEMROOT' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'F:/phpStudy/php55n'
+    '_FCGI_SHUTDOWN_EVENT_' => '1916'
+    'SCRIPT_NAME' => '/xiangmu/yii2/frontend/web/index.php'
+    'REQUEST_URI' => '/xiangmu/yii2/frontend/web/index.php?r=comment/feedback_list'
+    'QUERY_STRING' => 'r=comment/feedback_list'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '59128'
+    'SCRIPT_FILENAME' => 'F:/mjy/xiangmu/yii2/frontend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'F:/mjy'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'F:/mjy'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.mjy.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/0.9.8zb mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\Windows'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => 'PHPSESSID=av107tdus0e2qmt9v3ucqafea4; _csrf=e38fdfa517e9fa91ce1f840b063da06be45d0dc9f22f65941a78e991d7153179a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22qz1vutxOkcPqawKKsAj-0_E9RA2PyR-Q%22%3B%7D; Hm_lvt_080836300300be57b7f34f4b3e97d911=1463442089; Hm_lpvt_080836300300be57b7f34f4b3e97d911=1463469845; Huiskin=orange'
+    'HTTP_REFERER' => 'http://www.mjy.com/xiangmu/yii2/frontend/web/index.php?r=index/index'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:46.0) Gecko/20100101 Firefox/46.0'
+    'HTTP_HOST' => 'www.mjy.com'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/xiangmu/yii2/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1463471044.4038
+    'REQUEST_TIME' => 1463471044
+]
+2016-05-17 15:44:06 [127.0.0.1][-][av107tdus0e2qmt9v3ucqafea4][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request: comment/feedback_list' in F:\mjy\xiangmu\yii2\vendor\yiisoft\yii2\base\Controller.php:122
+Stack trace:
+#0 F:\mjy\xiangmu\yii2\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('feedback_list', Array)
+#1 F:\mjy\xiangmu\yii2\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('comment/feedbac...', Array)
+#2 F:\mjy\xiangmu\yii2\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 F:\mjy\xiangmu\yii2\frontend\web\index.php(18): yii\base\Application->run()
+#4 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in F:\mjy\xiangmu\yii2\vendor\yiisoft\yii2\web\Application.php:96
+Stack trace:
+#0 F:\mjy\xiangmu\yii2\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 F:\mjy\xiangmu\yii2\frontend\web\index.php(18): yii\base\Application->run()
+#2 {main}
+2016-05-17 15:44:06 [127.0.0.1][-][av107tdus0e2qmt9v3ucqafea4][info][application] $_GET = [
+    'r' => 'comment/feedback_list'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'av107tdus0e2qmt9v3ucqafea4'
+    '_csrf' => 'e38fdfa517e9fa91ce1f840b063da06be45d0dc9f22f65941a78e991d7153179a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"qz1vutxOkcPqawKKsAj-0_E9RA2PyR-Q\";}'
+    'Hm_lvt_080836300300be57b7f34f4b3e97d911' => '1463442089'
+    'Hm_lpvt_080836300300be57b7f34f4b3e97d911' => '1463469845'
+    'Huiskin' => 'orange'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Program Files (x86)\\AMD APP\\bin\\x86_64;C:\\Program Files (x86)\\AMD APP\\bin\\x86;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;F:\\Wamp\\mysql\\bin;F:\\SVN\\bin;D:\\TortoiseGit\\bin;F:\\phpStudy\\php55n;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\Administrator\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SYSTEMROOT' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'F:/phpStudy/php55n'
+    '_FCGI_SHUTDOWN_EVENT_' => '1916'
+    'SCRIPT_NAME' => '/xiangmu/yii2/frontend/web/index.php'
+    'REQUEST_URI' => '/xiangmu/yii2/frontend/web/index.php?r=comment/feedback_list'
+    'QUERY_STRING' => 'r=comment/feedback_list'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '59130'
+    'SCRIPT_FILENAME' => 'F:/mjy/xiangmu/yii2/frontend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'F:/mjy'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'F:/mjy'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.mjy.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/0.9.8zb mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\Windows'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => 'PHPSESSID=av107tdus0e2qmt9v3ucqafea4; _csrf=e38fdfa517e9fa91ce1f840b063da06be45d0dc9f22f65941a78e991d7153179a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22qz1vutxOkcPqawKKsAj-0_E9RA2PyR-Q%22%3B%7D; Hm_lvt_080836300300be57b7f34f4b3e97d911=1463442089; Hm_lpvt_080836300300be57b7f34f4b3e97d911=1463469845; Huiskin=orange'
+    'HTTP_REFERER' => 'http://www.mjy.com/xiangmu/yii2/frontend/web/index.php?r=index/index'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:46.0) Gecko/20100101 Firefox/46.0'
+    'HTTP_HOST' => 'www.mjy.com'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/xiangmu/yii2/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1463471046.2929
+    'REQUEST_TIME' => 1463471046
+]
+2016-05-17 15:44:07 [127.0.0.1][-][av107tdus0e2qmt9v3ucqafea4][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request: comment/feedback_list' in F:\mjy\xiangmu\yii2\vendor\yiisoft\yii2\base\Controller.php:122
+Stack trace:
+#0 F:\mjy\xiangmu\yii2\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('feedback_list', Array)
+#1 F:\mjy\xiangmu\yii2\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('comment/feedbac...', Array)
+#2 F:\mjy\xiangmu\yii2\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 F:\mjy\xiangmu\yii2\frontend\web\index.php(18): yii\base\Application->run()
+#4 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in F:\mjy\xiangmu\yii2\vendor\yiisoft\yii2\web\Application.php:96
+Stack trace:
+#0 F:\mjy\xiangmu\yii2\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 F:\mjy\xiangmu\yii2\frontend\web\index.php(18): yii\base\Application->run()
+#2 {main}
+2016-05-17 15:44:06 [127.0.0.1][-][av107tdus0e2qmt9v3ucqafea4][info][application] $_GET = [
+    'r' => 'comment/feedback_list'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'av107tdus0e2qmt9v3ucqafea4'
+    '_csrf' => 'e38fdfa517e9fa91ce1f840b063da06be45d0dc9f22f65941a78e991d7153179a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"qz1vutxOkcPqawKKsAj-0_E9RA2PyR-Q\";}'
+    'Hm_lvt_080836300300be57b7f34f4b3e97d911' => '1463442089'
+    'Hm_lpvt_080836300300be57b7f34f4b3e97d911' => '1463469845'
+    'Huiskin' => 'orange'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Program Files (x86)\\AMD APP\\bin\\x86_64;C:\\Program Files (x86)\\AMD APP\\bin\\x86;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;F:\\Wamp\\mysql\\bin;F:\\SVN\\bin;D:\\TortoiseGit\\bin;F:\\phpStudy\\php55n;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\Administrator\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SYSTEMROOT' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'F:/phpStudy/php55n'
+    '_FCGI_SHUTDOWN_EVENT_' => '1924'
+    'SCRIPT_NAME' => '/xiangmu/yii2/frontend/web/index.php'
+    'REQUEST_URI' => '/xiangmu/yii2/frontend/web/index.php?r=comment/feedback_list'
+    'QUERY_STRING' => 'r=comment/feedback_list'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '59129'
+    'SCRIPT_FILENAME' => 'F:/mjy/xiangmu/yii2/frontend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'F:/mjy'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'F:/mjy'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.mjy.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/0.9.8zb mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\Windows'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => 'PHPSESSID=av107tdus0e2qmt9v3ucqafea4; _csrf=e38fdfa517e9fa91ce1f840b063da06be45d0dc9f22f65941a78e991d7153179a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22qz1vutxOkcPqawKKsAj-0_E9RA2PyR-Q%22%3B%7D; Hm_lvt_080836300300be57b7f34f4b3e97d911=1463442089; Hm_lpvt_080836300300be57b7f34f4b3e97d911=1463469845; Huiskin=orange'
+    'HTTP_REFERER' => 'http://www.mjy.com/xiangmu/yii2/frontend/web/index.php?r=index/index'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:46.0) Gecko/20100101 Firefox/46.0'
+    'HTTP_HOST' => 'www.mjy.com'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/xiangmu/yii2/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1463471046.6799
+    'REQUEST_TIME' => 1463471046
+]
+2016-05-17 15:44:07 [127.0.0.1][-][av107tdus0e2qmt9v3ucqafea4][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request: comment/feedback_list' in F:\mjy\xiangmu\yii2\vendor\yiisoft\yii2\base\Controller.php:122
+Stack trace:
+#0 F:\mjy\xiangmu\yii2\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('feedback_list', Array)
+#1 F:\mjy\xiangmu\yii2\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('comment/feedbac...', Array)
+#2 F:\mjy\xiangmu\yii2\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 F:\mjy\xiangmu\yii2\frontend\web\index.php(18): yii\base\Application->run()
+#4 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in F:\mjy\xiangmu\yii2\vendor\yiisoft\yii2\web\Application.php:96
+Stack trace:
+#0 F:\mjy\xiangmu\yii2\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 F:\mjy\xiangmu\yii2\frontend\web\index.php(18): yii\base\Application->run()
+#2 {main}
+2016-05-17 15:44:07 [127.0.0.1][-][av107tdus0e2qmt9v3ucqafea4][info][application] $_GET = [
+    'r' => 'comment/feedback_list'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'av107tdus0e2qmt9v3ucqafea4'
+    '_csrf' => 'e38fdfa517e9fa91ce1f840b063da06be45d0dc9f22f65941a78e991d7153179a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"qz1vutxOkcPqawKKsAj-0_E9RA2PyR-Q\";}'
+    'Hm_lvt_080836300300be57b7f34f4b3e97d911' => '1463442089'
+    'Hm_lpvt_080836300300be57b7f34f4b3e97d911' => '1463469845'
+    'Huiskin' => 'orange'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Program Files (x86)\\AMD APP\\bin\\x86_64;C:\\Program Files (x86)\\AMD APP\\bin\\x86;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;F:\\Wamp\\mysql\\bin;F:\\SVN\\bin;D:\\TortoiseGit\\bin;F:\\phpStudy\\php55n;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\Administrator\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SYSTEMROOT' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'F:/phpStudy/php55n'
+    '_FCGI_SHUTDOWN_EVENT_' => '1916'
+    'SCRIPT_NAME' => '/xiangmu/yii2/frontend/web/index.php'
+    'REQUEST_URI' => '/xiangmu/yii2/frontend/web/index.php?r=comment/feedback_list'
+    'QUERY_STRING' => 'r=comment/feedback_list'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '59132'
+    'SCRIPT_FILENAME' => 'F:/mjy/xiangmu/yii2/frontend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'F:/mjy'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'F:/mjy'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.mjy.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/0.9.8zb mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\Windows'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => 'PHPSESSID=av107tdus0e2qmt9v3ucqafea4; _csrf=e38fdfa517e9fa91ce1f840b063da06be45d0dc9f22f65941a78e991d7153179a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22qz1vutxOkcPqawKKsAj-0_E9RA2PyR-Q%22%3B%7D; Hm_lvt_080836300300be57b7f34f4b3e97d911=1463442089; Hm_lpvt_080836300300be57b7f34f4b3e97d911=1463469845; Huiskin=orange'
+    'HTTP_REFERER' => 'http://www.mjy.com/xiangmu/yii2/frontend/web/index.php?r=index/index'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:46.0) Gecko/20100101 Firefox/46.0'
+    'HTTP_HOST' => 'www.mjy.com'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/xiangmu/yii2/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1463471047.59
+    'REQUEST_TIME' => 1463471047
+]
+2016-05-17 15:44:09 [127.0.0.1][-][av107tdus0e2qmt9v3ucqafea4][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request: comment/feedback_list' in F:\mjy\xiangmu\yii2\vendor\yiisoft\yii2\base\Controller.php:122
+Stack trace:
+#0 F:\mjy\xiangmu\yii2\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('feedback_list', Array)
+#1 F:\mjy\xiangmu\yii2\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('comment/feedbac...', Array)
+#2 F:\mjy\xiangmu\yii2\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 F:\mjy\xiangmu\yii2\frontend\web\index.php(18): yii\base\Application->run()
+#4 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in F:\mjy\xiangmu\yii2\vendor\yiisoft\yii2\web\Application.php:96
+Stack trace:
+#0 F:\mjy\xiangmu\yii2\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 F:\mjy\xiangmu\yii2\frontend\web\index.php(18): yii\base\Application->run()
+#2 {main}
+2016-05-17 15:44:09 [127.0.0.1][-][av107tdus0e2qmt9v3ucqafea4][info][application] $_GET = [
+    'r' => 'comment/feedback_list'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'av107tdus0e2qmt9v3ucqafea4'
+    '_csrf' => 'e38fdfa517e9fa91ce1f840b063da06be45d0dc9f22f65941a78e991d7153179a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"qz1vutxOkcPqawKKsAj-0_E9RA2PyR-Q\";}'
+    'Hm_lvt_080836300300be57b7f34f4b3e97d911' => '1463442089'
+    'Hm_lpvt_080836300300be57b7f34f4b3e97d911' => '1463469845'
+    'Huiskin' => 'orange'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Program Files (x86)\\AMD APP\\bin\\x86_64;C:\\Program Files (x86)\\AMD APP\\bin\\x86;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;F:\\Wamp\\mysql\\bin;F:\\SVN\\bin;D:\\TortoiseGit\\bin;F:\\phpStudy\\php55n;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\Administrator\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SYSTEMROOT' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'F:/phpStudy/php55n'
+    '_FCGI_SHUTDOWN_EVENT_' => '1916'
+    'SCRIPT_NAME' => '/xiangmu/yii2/frontend/web/index.php'
+    'REQUEST_URI' => '/xiangmu/yii2/frontend/web/index.php?r=comment/feedback_list'
+    'QUERY_STRING' => 'r=comment/feedback_list'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '59132'
+    'SCRIPT_FILENAME' => 'F:/mjy/xiangmu/yii2/frontend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'F:/mjy'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'F:/mjy'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.mjy.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/0.9.8zb mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\Windows'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => 'PHPSESSID=av107tdus0e2qmt9v3ucqafea4; _csrf=e38fdfa517e9fa91ce1f840b063da06be45d0dc9f22f65941a78e991d7153179a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22qz1vutxOkcPqawKKsAj-0_E9RA2PyR-Q%22%3B%7D; Hm_lvt_080836300300be57b7f34f4b3e97d911=1463442089; Hm_lpvt_080836300300be57b7f34f4b3e97d911=1463469845; Huiskin=orange'
+    'HTTP_REFERER' => 'http://www.mjy.com/xiangmu/yii2/frontend/web/index.php?r=index/index'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:46.0) Gecko/20100101 Firefox/46.0'
+    'HTTP_HOST' => 'www.mjy.com'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/xiangmu/yii2/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1463471049.4721
+    'REQUEST_TIME' => 1463471049
+]
+2016-05-17 15:44:11 [127.0.0.1][-][av107tdus0e2qmt9v3ucqafea4][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request: comment/feedback_list' in F:\mjy\xiangmu\yii2\vendor\yiisoft\yii2\base\Controller.php:122
+Stack trace:
+#0 F:\mjy\xiangmu\yii2\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('feedback_list', Array)
+#1 F:\mjy\xiangmu\yii2\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('comment/feedbac...', Array)
+#2 F:\mjy\xiangmu\yii2\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 F:\mjy\xiangmu\yii2\frontend\web\index.php(18): yii\base\Application->run()
+#4 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in F:\mjy\xiangmu\yii2\vendor\yiisoft\yii2\web\Application.php:96
+Stack trace:
+#0 F:\mjy\xiangmu\yii2\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 F:\mjy\xiangmu\yii2\frontend\web\index.php(18): yii\base\Application->run()
+#2 {main}
+2016-05-17 15:44:11 [127.0.0.1][-][av107tdus0e2qmt9v3ucqafea4][info][application] $_GET = [
+    'r' => 'comment/feedback_list'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'av107tdus0e2qmt9v3ucqafea4'
+    '_csrf' => 'e38fdfa517e9fa91ce1f840b063da06be45d0dc9f22f65941a78e991d7153179a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"qz1vutxOkcPqawKKsAj-0_E9RA2PyR-Q\";}'
+    'Hm_lvt_080836300300be57b7f34f4b3e97d911' => '1463442089'
+    'Hm_lpvt_080836300300be57b7f34f4b3e97d911' => '1463469845'
+    'Huiskin' => 'orange'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Program Files (x86)\\AMD APP\\bin\\x86_64;C:\\Program Files (x86)\\AMD APP\\bin\\x86;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;F:\\Wamp\\mysql\\bin;F:\\SVN\\bin;D:\\TortoiseGit\\bin;F:\\phpStudy\\php55n;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\Administrator\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SYSTEMROOT' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'F:/phpStudy/php55n'
+    '_FCGI_SHUTDOWN_EVENT_' => '1916'
+    'SCRIPT_NAME' => '/xiangmu/yii2/frontend/web/index.php'
+    'REQUEST_URI' => '/xiangmu/yii2/frontend/web/index.php?r=comment/feedback_list'
+    'QUERY_STRING' => 'r=comment/feedback_list'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '59132'
+    'SCRIPT_FILENAME' => 'F:/mjy/xiangmu/yii2/frontend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'F:/mjy'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'F:/mjy'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.mjy.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/0.9.8zb mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\Windows'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => 'PHPSESSID=av107tdus0e2qmt9v3ucqafea4; _csrf=e38fdfa517e9fa91ce1f840b063da06be45d0dc9f22f65941a78e991d7153179a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22qz1vutxOkcPqawKKsAj-0_E9RA2PyR-Q%22%3B%7D; Hm_lvt_080836300300be57b7f34f4b3e97d911=1463442089; Hm_lpvt_080836300300be57b7f34f4b3e97d911=1463469845; Huiskin=orange'
+    'HTTP_REFERER' => 'http://www.mjy.com/xiangmu/yii2/frontend/web/index.php?r=index/index'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:46.0) Gecko/20100101 Firefox/46.0'
+    'HTTP_HOST' => 'www.mjy.com'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/xiangmu/yii2/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1463471051.3632
+    'REQUEST_TIME' => 1463471051
+]
+2016-05-17 16:05:36 [127.0.0.1][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined variable: arr' in F:\mjy\xiangmu\yii2\frontend\views\comment\feedback-list.html:50
+Stack trace:
+#0 F:\mjy\xiangmu\yii2\frontend\views\comment\feedback-list.html(50): yii\base\ErrorHandler->handleError(8, 'Undefined varia...', 'F:\\mjy\\xiangmu\\...', 50, Array)
+#1 F:\mjy\xiangmu\yii2\vendor\yiisoft\yii2\base\View.php(325): require('F:\\mjy\\xiangmu\\...')
+#2 F:\mjy\xiangmu\yii2\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('F:\\mjy\\xiangmu\\...', Array)
+#3 F:\mjy\xiangmu\yii2\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile('F:\\mjy\\xiangmu\\...', Array, Object(frontend\controllers\CommentController))
+#4 F:\mjy\xiangmu\yii2\vendor\yiisoft\yii2\base\Controller.php(371): yii\base\View->render('feedback-list.h...', Array, Object(frontend\controllers\CommentController))
+#5 F:\mjy\xiangmu\yii2\frontend\controllers\CommentController.php(10): yii\base\Controller->render('feedback-list.h...')
+#6 [internal function]: frontend\controllers\CommentController->actionComment_list()
+#7 F:\mjy\xiangmu\yii2\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#8 F:\mjy\xiangmu\yii2\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#9 F:\mjy\xiangmu\yii2\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('comment_list', Array)
+#10 F:\mjy\xiangmu\yii2\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('comment/comment...', Array)
+#11 F:\mjy\xiangmu\yii2\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 F:\mjy\xiangmu\yii2\frontend\web\index.php(18): yii\base\Application->run()
+#13 {main}
+2016-05-17 16:05:36 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'comment/comment_list'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'av107tdus0e2qmt9v3ucqafea4'
+    '_csrf' => 'e38fdfa517e9fa91ce1f840b063da06be45d0dc9f22f65941a78e991d7153179a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"qz1vutxOkcPqawKKsAj-0_E9RA2PyR-Q\";}'
+    'Hm_lvt_080836300300be57b7f34f4b3e97d911' => '1463442089'
+    'Hm_lpvt_080836300300be57b7f34f4b3e97d911' => '1463471058'
+    'Huiskin' => 'blue'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Program Files (x86)\\AMD APP\\bin\\x86_64;C:\\Program Files (x86)\\AMD APP\\bin\\x86;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;F:\\Wamp\\mysql\\bin;F:\\SVN\\bin;D:\\TortoiseGit\\bin;F:\\phpStudy\\php55n;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\Administrator\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SYSTEMROOT' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'F:/phpStudy/php55n'
+    '_FCGI_SHUTDOWN_EVENT_' => '1812'
+    'SCRIPT_NAME' => '/xiangmu/yii2/frontend/web/index.php'
+    'REQUEST_URI' => '/xiangmu/yii2/frontend/web/index.php?r=comment/comment_list'
+    'QUERY_STRING' => 'r=comment/comment_list'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '59237'
+    'SCRIPT_FILENAME' => 'F:/mjy/xiangmu/yii2/frontend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'F:/mjy'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'F:/mjy'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.mjy.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/0.9.8zb mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\Windows'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => 'PHPSESSID=av107tdus0e2qmt9v3ucqafea4; _csrf=e38fdfa517e9fa91ce1f840b063da06be45d0dc9f22f65941a78e991d7153179a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22qz1vutxOkcPqawKKsAj-0_E9RA2PyR-Q%22%3B%7D; Hm_lvt_080836300300be57b7f34f4b3e97d911=1463442089; Hm_lpvt_080836300300be57b7f34f4b3e97d911=1463471058; Huiskin=blue'
+    'HTTP_REFERER' => 'http://www.mjy.com/xiangmu/yii2/frontend/web/index.php?r=comment/comment_list'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:46.0) Gecko/20100101 Firefox/46.0'
+    'HTTP_HOST' => 'www.mjy.com'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/xiangmu/yii2/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1463472336.5417
+    'REQUEST_TIME' => 1463472336
+]
+2016-05-17 16:05:36 [127.0.0.1][-][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: Exception 'Exception' with message 'Serialization of 'Closure' is not allowed' 
+
+in F:\mjy\xiangmu\yii2\vendor\yiisoft\yii2-debug\LogTarget.php:58
+
+Stack trace:
+#0 F:\mjy\xiangmu\yii2\vendor\yiisoft\yii2-debug\LogTarget.php(58): serialize(Array)
+#1 F:\mjy\xiangmu\yii2\vendor\yiisoft\yii2-debug\LogTarget.php(112): yii\debug\LogTarget->export(Array)
+#2 F:\mjy\xiangmu\yii2\vendor\yiisoft\yii2\log\Dispatcher.php(183): yii\debug\LogTarget->collect(Array, true)
+#3 F:\mjy\xiangmu\yii2\vendor\yiisoft\yii2\log\Logger.php(173): yii\log\Dispatcher->dispatch(Array, true)
+#4 F:\mjy\xiangmu\yii2\vendor\yiisoft\yii2\base\ErrorHandler.php(111): yii\log\Logger->flush(true)
+#5 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\base\ErrorException))
+#6 {main}
+2016-05-17 16:05:36 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'comment/comment_list'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'av107tdus0e2qmt9v3ucqafea4'
+    '_csrf' => 'e38fdfa517e9fa91ce1f840b063da06be45d0dc9f22f65941a78e991d7153179a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"qz1vutxOkcPqawKKsAj-0_E9RA2PyR-Q\";}'
+    'Hm_lvt_080836300300be57b7f34f4b3e97d911' => '1463442089'
+    'Hm_lpvt_080836300300be57b7f34f4b3e97d911' => '1463471058'
+    'Huiskin' => 'blue'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Program Files (x86)\\AMD APP\\bin\\x86_64;C:\\Program Files (x86)\\AMD APP\\bin\\x86;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;F:\\Wamp\\mysql\\bin;F:\\SVN\\bin;D:\\TortoiseGit\\bin;F:\\phpStudy\\php55n;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\Administrator\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SYSTEMROOT' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'F:/phpStudy/php55n'
+    '_FCGI_SHUTDOWN_EVENT_' => '1812'
+    'SCRIPT_NAME' => '/xiangmu/yii2/frontend/web/index.php'
+    'REQUEST_URI' => '/xiangmu/yii2/frontend/web/index.php?r=comment/comment_list'
+    'QUERY_STRING' => 'r=comment/comment_list'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '59237'
+    'SCRIPT_FILENAME' => 'F:/mjy/xiangmu/yii2/frontend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'F:/mjy'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'F:/mjy'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.mjy.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/0.9.8zb mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\Windows'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => 'PHPSESSID=av107tdus0e2qmt9v3ucqafea4; _csrf=e38fdfa517e9fa91ce1f840b063da06be45d0dc9f22f65941a78e991d7153179a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22qz1vutxOkcPqawKKsAj-0_E9RA2PyR-Q%22%3B%7D; Hm_lvt_080836300300be57b7f34f4b3e97d911=1463442089; Hm_lpvt_080836300300be57b7f34f4b3e97d911=1463471058; Huiskin=blue'
+    'HTTP_REFERER' => 'http://www.mjy.com/xiangmu/yii2/frontend/web/index.php?r=comment/comment_list'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:46.0) Gecko/20100101 Firefox/46.0'
+    'HTTP_HOST' => 'www.mjy.com'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/xiangmu/yii2/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1463472336.5417
+    'REQUEST_TIME' => 1463472336
+]
