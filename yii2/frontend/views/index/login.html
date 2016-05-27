@@ -1,4 +1,13 @@
-﻿<!DOCTYPE HTML>
+﻿<?php
+use yii\widgets\ActiveForm;
+use yii\captcha\Captcha;
+$form = ActiveForm::begin([
+    'options' => ['enctype' => 'multipart/form-data'],
+'action'=>'index.php?r=index/index',
+'method'=>'post',
+])
+?>
+
 <html>
 <head>
 <meta charset="utf-8">
@@ -43,8 +52,17 @@
       </div>
       <div class="row cl">
         <div class="formControls col-8 col-offset-3">
+
           <input class="input-text size-L" type="text" placeholder="验证码" onblur="if(this.value==''){this.value='验证码:'}" onclick="if(this.value=='验证码:'){this.value='';}" value="验证码:" style="width:150px;">
-          <img src="images/VerifyCode.aspx.png"> <a id="kanbuq" href="javascript:;">看不清，换一张</a> </div>
+     <!--<img src="images/VerifyCode.aspx.png">-->
+            <?= $form->field($model, 'verifyCode', [
+            'options' => ['class' => 'form-group form-group-lg'],
+            ])->widget(Captcha::className(),[
+            'template' => "{image}",
+            'imageOptions' => ['alt' => '验证码'],
+            'captchaAction' => 'site/captcha',
+            ]); ?>
+            <a id="kanbuq" href="javascript:;">看不清，换一张</a> </div>
       </div>
       <div class="row">
         <div class="formControls col-8 col-offset-3">
