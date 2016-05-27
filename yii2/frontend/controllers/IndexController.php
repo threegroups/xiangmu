@@ -13,6 +13,7 @@ use frontend\models\LUser;
 class IndexController extends Controller{
     public $enableCsrfValidation = false;
     public $layout =false ;
+<<<<<<< HEAD
     /**
      * @inheritdoc
      */
@@ -37,6 +38,8 @@ class IndexController extends Controller{
         //接受表单提交的值
         return $this->render('index.html');
     }
+=======
+>>>>>>> f549ce10ff9a363ddb1fa2aa6f86a85767571cd9
     public function actionWelcome()
     {
         return $this->render('welcome.html');
