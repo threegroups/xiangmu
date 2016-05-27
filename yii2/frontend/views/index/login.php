@@ -1,13 +1,6 @@
 ﻿<?php
-use yii\widgets\ActiveForm;
-use yii\captcha\Captcha;
-$form = ActiveForm::begin([
-    'options' => ['enctype' => 'multipart/form-data'],
-'action'=>'index.php?r=index/index',
-'method'=>'post',
-])
+$session = \Yii::$app->session;
 ?>
-
 <html>
 <head>
 <meta charset="utf-8">
@@ -41,33 +34,25 @@ $form = ActiveForm::begin([
       <div class="row cl">
         <label class="form-label col-3"><i class="Hui-iconfont">&#xe60d;</i></label>
         <div class="formControls col-8">
-          <input id="" name="" type="text" placeholder="账户" class="input-text size-L">
+          <input  name="u_name"  value="<?php echo $session->get('u_name');?>" type="text" placeholder="账户" class="input-text size-L">
         </div>
       </div>
       <div class="row cl">
         <label class="form-label col-3"><i class="Hui-iconfont">&#xe60e;</i></label>
         <div class="formControls col-8">
-          <input id="" name="" type="password" placeholder="密码" class="input-text size-L">
+          <input name="u_pwd" value="<?php echo $session->get('u_pwd');?>" type="password" placeholder="密码" class="input-text size-L">
         </div>
       </div>
       <div class="row cl">
-        <div class="formControls col-8 col-offset-3">
-
-          <input class="input-text size-L" type="text" placeholder="验证码" onblur="if(this.value==''){this.value='验证码:'}" onclick="if(this.value=='验证码:'){this.value='';}" value="验证码:" style="width:150px;">
-     <!--<img src="images/VerifyCode.aspx.png">-->
-            <?= $form->field($model, 'verifyCode', [
-            'options' => ['class' => 'form-group form-group-lg'],
-            ])->widget(Captcha::className(),[
-            'template' => "{image}",
-            'imageOptions' => ['alt' => '验证码'],
-            'captchaAction' => 'site/captcha',
-            ]); ?>
-            <a id="kanbuq" href="javascript:;">看不清，换一张</a> </div>
+        <!--<div class="formControls col-8 col-offset-3">-->
+          <!--<input class="input-text size-L" type="text" placeholder="验证码" onblur="if(this.value==''){this.value='验证码:'}" onclick="if(this.value=='验证码:'){this.value='';}" value="验证码:" style="width:150px;">-->
+          <!--<img src="images/VerifyCode.aspx.png"> <a id="kanbuq" href="javascript:;">看不清，换一张</a> </div>-->
+          ]) ?>
       </div>
       <div class="row">
         <div class="formControls col-8 col-offset-3">
           <label for="online">
-            <input type="checkbox" name="online" id="online" value="">
+            <input type="checkbox" name="online" id="online" value="1">
             使我保持登录状态</label>
         </div>
       </div>

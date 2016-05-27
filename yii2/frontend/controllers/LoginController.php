@@ -1,6 +1,7 @@
 <?php
 namespace frontend\controllers;
 use yii;
+<<<<<<< HEAD
 use yii\web\Controller;
 use frontend\models\Admin;
 use yii\web\UploadedFile;
@@ -13,6 +14,12 @@ class LoginController extends \yii\web\Controller
 {
     public $enableCsrfValidation=false;
     public $layout =false;
+=======
+class LoginController extends \yii\web\Controller
+{
+    public $enableCsrfValidation=false;
+    public $layout =false ;
+>>>>>>> efdedffeb6789ce36dd9618f95538edfd89cf9ca
     public function actionIndex()
     {
         return $this->render('login');
@@ -63,6 +70,7 @@ class LoginController extends \yii\web\Controller
             ['arr'=>$arr]
         );
     }
+<<<<<<< HEAD
     //会员添加
     public function actionMember_add(){
         $model=new Admin();
@@ -184,4 +192,6 @@ class LoginController extends \yii\web\Controller
             echo 0;
         }
     }
+=======
+>>>>>>> efdedffeb6789ce36dd9618f95538edfd89cf9ca
 }

@@ -25,18 +25,10 @@ $session = \Yii::$app->session;
 <body>
 <div class="cl pd-20" style=" background-color:#5bacb6">
   <img class="avatar size-XL l" src="images/user.png">
-<<<<<<< HEAD
   <dl style="margin-left:80px; color:#fff">
     <dt><span class="f-18"><?php echo $session->get('u_name');?></span> <span class="pl-10 f-12">余额：40</span></dt>
     <dd class="pt-10 f-12" style="margin-left:0">这家伙很懒，什么也没有留下</dd>
   </dl>
-=======
-  <dl style="margin-left:80px; color:#fff; float: left;" >
-    <dt><span class="f-18"><?php echo $session->get('u_name');?></span> <span class="pl-10 f-12">余额：40</span></dt>
-    <dd class="pt-10 f-12" style="margin-left:0">这家伙很懒，什么也没有留下</dd>
-  </dl>
-    <dl style="float: right;" mar><a href="index.php?r=login/indexes"><input type="button" value="返回"/></a></dl>
->>>>>>> efdedffeb6789ce36dd9618f95538edfd89cf9ca
 </div>
 <div class="pd-20">
   <table class="table">
