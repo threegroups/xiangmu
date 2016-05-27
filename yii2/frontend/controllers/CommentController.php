@@ -23,9 +23,12 @@ class CommentController extends \yii\web\Controller
 		//echo $totalCount;die;
 		//print_r($pages);die;
 		$models = $query->offset($pages->offset)
+<<<<<<< HEAD
 		->orderBy([
 			    'c_id' => SORT_ASC,
 			])
+=======
+>>>>>>> f549ce10ff9a363ddb1fa2aa6f86a85767571cd9
 			->limit($pages->limit)
 			->all();
 		
@@ -37,6 +40,7 @@ class CommentController extends \yii\web\Controller
        
     }
 
+<<<<<<< HEAD
     /*删除单条*/
 	public function actionDel()
 	{
@@ -109,4 +113,6 @@ class CommentController extends \yii\web\Controller
 		}
     }
 
+=======
+>>>>>>> f549ce10ff9a363ddb1fa2aa6f86a85767571cd9
 }
