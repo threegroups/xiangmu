@@ -514,9 +514,13 @@
                             <div class="picbox">
                                 <ul class="piclist">
                                     @foreach ($users as $k=>$v)
+                                        <?php for($i=0;$i<count($picture[$k]);$i++){?>
+                                        <li class="slideshow-item">
+                                            <a href="#" rel="nofollow"><img src="http://localhost/laravel-master/public/public/images/{{$picture[0][$i]}}" alt="" width="860px" height="527px"/></a>
+                                        </li>
+                                        <?php }?>
+                                    @endforeach
 
-                                    <li ><a href="#" rel="nofollow"><img src="http://localhost/laravel-master/public/public/images/{{$picture[$k][0]}}" alt="芳城园短租房"/></a></li>
-                                     @endforeach
                                 </ul>
                                 <a id="big_play_prev" class="home-picprev" href="#" rel="nofollow" style="cursor:url(http://staticnew.mayi.com/resourcesWeb/images/detail/mouseup.cur), auto; background:#fff;opacity:0;filter:alpha(opacity=0)"></a>
                                 <a id="big_play_next" class="home-picnext" href="#" rel="nofollow" style="cursor:url(http://staticnew.mayi.com/resourcesWeb/images/detail/mousedown.cur), auto; background:#fff;opacity:0;filter:alpha(opacity=0)"></a>
@@ -524,7 +528,7 @@
                             <div class="picsmallbox">
                                 <div class="picboxpic">
                                     <ul id="picsmall" class="picsmall clearfix" style="height: 2660px; top: -210px;">
-                                        ::before
+
                                         <!--房源图片展示-->
                                         @foreach ($users as $k=>$v)
                                            <?php for($i=0;$i<count($picture[$k]);$i++){?>
@@ -532,7 +536,6 @@
                                                    <a href="#" rel="nofollow"><img src="http://localhost/laravel-master/public/public/images/{{$picture[0][$i]}}" alt=""/></a>
                                                </li>
                                            <?php }?>
-                                            ::after
                                         @endforeach
                                     </ul>
                                 </div>

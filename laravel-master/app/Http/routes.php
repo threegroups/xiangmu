@@ -48,6 +48,7 @@ Route::get('login','IndexController@login');
 //页面详情
 Route::get('detail_list','DetailController@detail_list');
 Route::get('detail_show','DetailController@detail_show');
+Route::get('collect','DetailController@Collect');
 //页面注册
 Route::get('register','IndexController@register');
 Route::post('add_users','IndexController@add_users');

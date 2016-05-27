@@ -2192,11 +2192,12 @@ var youdao_conv_id = 279356;
                         @foreach ($results as $k=>$user)
 
                             <dd id="dd_850345114" data="850345114" lid="850345114" colleState="0" price="438" latlng="39.876065,116.440281">
-
+                                <a href="{{URL('collect?id=')}}{{$user->l_id}}">
                                 <div class="room-img">
                                     <div class="collect" state="1" title="收藏" id="c_850345114" onClick="lodge_collect(this)"></div>
                                     <!--图片切换-->
                                     <div>
+                                </a>
                                         <div class="house-image">
                                             <a href="detail_show?id={{$user->l_id}}" class="change-prev" style="display:none;" data="850345114"></a>
                                             <a href="detail_show?id={{$user->l_id}}" onClick="goDetail(this)" title="{{$user->room_desc}}" target="_blank">

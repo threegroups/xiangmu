@@ -110,13 +110,15 @@ class IndexController extends BaseController
                     //  Session::put('name', $name);
                     //$value = Session::get('name');
                     //  echo $value;
+                    $id=$user->u_id;
                     define('SESSION_LIFE',18000);
                     session_set_cookie_params(SESSION_LIFE);
                     session_start();
+                    $_SESSION['u_id'] = $id;
                     $_SESSION['name'] = $name;
                     //$kk=$_SESSION['name'];
                     //  echo  $kk;
-                    echo '<script>alert("登陆成功");location.href="index"</script>';
+                    echo '<script>alert("登陆成功");history.go(-2);</script>';
                 }else{
                     echo '<script>alert("密码不正确");location.href="login"</script>';
 

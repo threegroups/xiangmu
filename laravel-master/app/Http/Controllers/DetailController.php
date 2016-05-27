@@ -47,6 +47,32 @@ class DetailController extends BaseController
 //        print_r($picture);die;
         return view('detail/detail_show',['users'=>$users ,'set'=>$set,'picture'=>$picture]);
         }
+    public function Collect()
+    {
+        session_start();
+        if(empty($_SESSION['u_id'])){
+            echo '<script>alert("请先登录");location.href="login"</script>';die;
+        }
+        $id = Input::get('id');
+
+        $u_id = $_SESSION['u_id'];
+        //echo $u_id;
+        //echo $id;die;
+        $collect = DB::table('collect')->where('u_id', $u_id)->first();
+        if ($collect) {
+            echo "<script>alert('您已收藏！');history.go(-1);</script>";
+        } else {
+            $command = DB::table('collect')->insert(
+                array('l_id' => $id, 'u_id' => $u_id)
+            );
+            if ($command) {
+                echo "<script>alert('收藏成功');history.go(-1);</script>";
+            } else {
+                echo "<script>alert('收藏失败');history.go(-1);</script>";
+            }
+        }
+    }
 
 
-}
+
+    }
