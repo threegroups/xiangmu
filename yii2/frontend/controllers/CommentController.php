@@ -6,6 +6,7 @@ use frontend\models\Clip;
 
 class CommentController extends \yii\web\Controller
 {
+    public $layout =false ;
 	public $enableCsrfValidation = false;
 	/*留言列表*/
     public function actionComment_list()

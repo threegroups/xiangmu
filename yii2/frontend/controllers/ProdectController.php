@@ -12,6 +12,7 @@ use \yii\captcha\Captcha;
 class ProdectController extends \yii\web\Controller
 {
     //房源信息
+    public $layout =false ;
     public function actionProduct_brand()
     {
         $connection = \Yii::$app->db;

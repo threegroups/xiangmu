@@ -5,7 +5,7 @@ namespace frontend\controllers;
 class ListController extends \yii\web\Controller
 {
     public $enableCsrfValidation = false;
-
+	public $layout =false ;
     public function actionMember_list()
     {
         return $this->render('member-list');
