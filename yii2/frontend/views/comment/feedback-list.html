@@ -33,12 +33,21 @@ use yii\widgets\LinkPager;
 		<input type="text" class="input-text" style="width:250px" placeholder="输入关键词" id="" name="">
 		<button type="submit" class="btn btn-success radius" id="" name=""><i class="Hui-iconfont">&#xe665;</i> 搜意见</button>
 	</div>
+<<<<<<< HEAD
+	<div class="cl pd-5 bg-1 bk-gray mt-20"> <span class="l"><!-- <a href="javascript:;" onclick="datadel()" class="btn btn-danger radius"><i class="Hui-iconfont">&#xe6e2;</i> 批量删除</a> --> </span> <span class="r">共有数据：<strong><font size="" color="red"><?php echo $totalCount?></font></strong> 条</span> </div>
+	<div class="mt-20">
+	<table class="table table-border table-bordered table-hover table-bg table-sort" id="tcontent">
+			<thead>
+				<tr class="text-c">
+					<th width="25">选择</th>
+=======
 	<div class="cl pd-5 bg-1 bk-gray mt-20"> <span class="l"><a href="javascript:;" onclick="datadel()" class="btn btn-danger radius"><i class="Hui-iconfont">&#xe6e2;</i> 批量删除</a> </span> <span class="r">共有数据：<strong><font size="" color="red"><?php echo $totalCount?></font></strong> 条</span> </div>
 	<div class="mt-20">
 		<table class="table table-border table-bordered table-hover table-bg table-sort">
 			<thead>
 				<tr class="text-c">
 					<th width="25"><input type="checkbox" name="" value=""></th>
+>>>>>>> f549ce10ff9a363ddb1fa2aa6f86a85767571cd9
 					<th width="60">ID</th>
 					<th width="60">留言标题</th>
 					<th>留言内容</th>
@@ -48,8 +57,13 @@ use yii\widgets\LinkPager;
 			</thead>
 			<tbody>
 			<?php foreach($arr as $v){?>
+<<<<<<< HEAD
+				<tr class="text-c" id="<?php echo $v['c_id']?>">
+					<td><input type="checkbox" name="x[]" id='playList' class='xuan' value="<?php echo $v['c_id']?>"></td>
+=======
 				<tr class="text-c">
 					<td><input type="checkbox" value="1" name=""></td>
+>>>>>>> f549ce10ff9a363ddb1fa2aa6f86a85767571cd9
 					<td><?php echo $v['c_id']?></td>
 					<td><?php echo $v['name']?></td>
 					<td class="text-l">
@@ -59,12 +73,29 @@ use yii\widgets\LinkPager;
 						<?php echo $v['username']?>
 					</td>
 					<td class="td-manage">
+<<<<<<< HEAD
+						<!-- <a title="编辑" href="javascript:;" onclick="member_edit('编辑','member-add.html','4','','510')" style="text-decoration:none"><i class="Hui-iconfont">&#xe6df;</i></a>  --><a title="删除" href="javascript:;" onclick="member_del(this,'<?php echo $v['c_id']?>')" class="ml-5" style="text-decoration:none"><i class="Hui-iconfont">&#xe6e2;</i></a>
+=======
 						<a title="编辑" href="javascript:;" onclick="member_edit('编辑','member-add.html','4','','510')" style="text-decoration:none"><i class="Hui-iconfont">&#xe6df;</i></a> <a title="删除" href="javascript:;" onclick="member_del(this,'1')" class="ml-5" style="text-decoration:none"><i class="Hui-iconfont">&#xe6e2;</i></a>
+>>>>>>> f549ce10ff9a363ddb1fa2aa6f86a85767571cd9
 					</td>
 				</tr>
 				<?php
 				}
 				?>
+<<<<<<< HEAD
+			</tbody>
+		</table>
+		<?php
+			echo LinkPager::widget([
+				'pagination' => $pages,
+			]);
+		?>
+		<a href="javascript:;" id="selectAll" class="btn btn-danger radius"><i class="Hui-iconfont">&#xe600;</i> 全选</a>
+		<a href="javascript:;" id="unSelect" class="btn btn-danger radius"><i class="Hui-iconfont">&#xe600;</i> 反选</a>
+		<a href="javascript:;" id="reverse" class="btn btn-danger radius"><i class="Hui-iconfont">&#xe600;</i> 取消</a>
+		<a href="javascript:;" id="selectdel" class="btn btn-danger radius"><i class="Hui-iconfont">&#xe6e2;</i> 批量删除</a>
+=======
 				<!-- <tr class="text-c">
 					<td><input type="checkbox" value="1" name=""></td>
 					<td>1</td>
@@ -90,6 +121,7 @@ use yii\widgets\LinkPager;
 
 			</tbody>
 		</table>
+>>>>>>> f549ce10ff9a363ddb1fa2aa6f86a85767571cd9
 	</div>
 </div>
 <script type="text/javascript" src="lib/jquery/1.9.1/jquery.min.js"></script>
@@ -154,6 +186,104 @@ function member_edit(title,url,id,w,h){
 function change_password(title,url,id,w,h){
 	layer_show(title,url,w,h);
 }
+<<<<<<< HEAD
+/*留言-删除*/
+function member_del(obj,id){
+	var cid = $("#tcontent").find("tr:last").attr("id");
+	
+	layer.confirm('确认要删除吗？',function(index){
+		var url="index.php?r=comment/del";	
+		var data={"id":id,"cid":cid};
+		$.get(url,data,function(msg){
+					//alert(msg)
+					if(msg){
+						$(obj).parents("tr").remove();
+						layer.msg('已删除!',{icon:1,time:1000});
+						$("#tcontent").find("tr:last").after(msg)
+					}else{
+						layer.msg('删除失败!',{icon:1,time:1000});
+					}
+				})
+
+		
+	});
+}
+
+/*留言列表的全选反选批量删除*/
+           $("#selectAll").click(function () {//全选 
+			   $('.xuan').each(function(){
+					$(this).prop("checked", true);  
+			   })
+               
+            });  
+  
+            $("#reverse").click(function () {//全不选  
+               $('.xuan').each(function(){
+					$(this).prop("checked", false);  
+			   }) 
+            });  
+  
+            $("#unSelect").click(function () {//反选  
+                $('.xuan').each(function () {  
+                    $(this).prop("checked", !$(this).prop("checked"));  
+                });  
+            });
+            /*批删*/
+			$("#selectdel").click(function(){
+				var str='';
+				var cid = $("#tcontent").find("tr:last").attr("id");
+				var name=document.getElementsByName("x[]").valueOf();
+				for (var i = 0; i < name.length; i++) {
+					if(name[i].checked){
+						str+=','+name[i].value;	
+					}
+				};
+				/*$(".xuan").each(function(){
+					//str+=','+$(this).val();
+					
+				}) ;*/
+				id=str.substring(1);
+				layer.confirm('确认要删除吗？',function(index){
+					var url="index.php?r=comment/seldel";	
+					var data={"id":id,"cid":cid};
+					$.get(url,data,function(msg){
+								//alert(msg)
+								if(msg){
+									for(var i=name.length-1;i>=0;i--){
+										if(name[i].checked){
+											name[i].parentNode.parentNode.parentNode.removeChild(name[i].parentNode.parentNode)					
+										}
+									}
+									layer.msg('已删除!',{icon:1,time:1000});
+									$("#tcontent").find("tr:last").after(msg)
+								}else{
+									layer.msg('删除失败!',{icon:1,time:1000});
+								}
+							})
+
+					
+				});
+
+
+				/*var url="index.php?r=comment/seldel";	
+				var data={"id":id};
+				$.get(url,data,function(msg){
+					//alert(msg)
+					if(msg){
+						for(var i=name.length-1;i>=0;i--){
+							if(name[i].checked){
+								name[i].parentNode.parentNode.parentNode.removeChild(name[i].parentNode.parentNode)					
+							}
+						}
+						window.location.reload();
+					}else{
+						alert('删除失败')
+					}
+				})*/
+			})
+      
+
+=======
 /*用户-删除*/
 function member_del(obj,id){
 	layer.confirm('确认要删除吗？',function(index){
@@ -161,6 +291,7 @@ function member_del(obj,id){
 		layer.msg('已删除!',{icon:1,time:1000});
 	});
 }
+>>>>>>> f549ce10ff9a363ddb1fa2aa6f86a85767571cd9
 </script>
 </body>
 </html>

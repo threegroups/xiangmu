@@ -129,10 +129,10 @@ class IndexController extends Controller{
     {
         return $this->render('product-list.html');
     }
-    public function actionFeedback_list()
+    /*public function actionFeedback_list()
     {
         return $this->render('feedback-list.html');
-    }
+    }*/
     public function actionMember_list()
     {
         return $this->render('member-list.html');
@@ -153,7 +153,6 @@ class IndexController extends Controller{
     {
         return $this->render('admin-list.html');
     }
-
 }
 
 ?>
