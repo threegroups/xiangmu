@@ -12,6 +12,7 @@ class Index extends Model{
     public function rules()
     {
         return [
+
             [['imageFile'], 'file', 'skipOnEmpty' => false, 'extensions' => 'png, jpg'],
         ];
     }
